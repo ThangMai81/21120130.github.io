@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <video id="myVideo" width="320" height="240" controls loop>
+      <!-- <source src="video.mp4" type="video/mp4" /> -->
+      <source
+        src="http://www.w3schools.com/html/mov_bbb.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <canvas
+      id="myCanvas"
+      width="320"
+      height="190"
+      style="padding: 0px; top: 0px"
+    ></canvas>
+    <script src="script.js"></script>
+    <script src="https://www.marvinj.org/releases/marvinj-0.7.js"></script>
+    <p>
+      do có vấn đề khi sử dụng video được tải từ một link khác:
+      http://www.w3schools.com/html/mov_bbb.mp4 (vấn đề đó ở link này
+      https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image) nên
+      var frame = canvas.dataToURL để thu canvas về ảnh không thành công Khi em
+      sử dụng video tải về là video.mp4, code chạy được nhưng nó không hiển thị
+      hình ảnh được Em vẫn chưa tìm được video hiện tại cho local host phù hợp.
+      Tham khảo edge detection ở đây ạ:
+      https://www.marvinj.org/en/releases/marvinj_1.0.html
+    </p>
+  </body>
+</html>
